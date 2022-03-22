@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28C2913E27EA771000F09C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2913D27EA771000F09C1B /* AppDelegate.swift */; };
+		28C2914027EA771000F09C1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2913F27EA771000F09C1B /* SceneDelegate.swift */; };
+		28C2914527EA771000F09C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C2914327EA771000F09C1B /* Main.storyboard */; };
+		28C2914727EA771100F09C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C2914627EA771100F09C1B /* Assets.xcassets */; };
+		28C2914A27EA771100F09C1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C2914827EA771100F09C1B /* LaunchScreen.storyboard */; };
+		28C2915527EA771200F09C1B /* MuraliRestaurantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2915427EA771200F09C1B /* MuraliRestaurantTests.swift */; };
+		28C2915F27EA771200F09C1B /* MuraliRestaurantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2915E27EA771200F09C1B /* MuraliRestaurantUITests.swift */; };
+		28C2916127EA771200F09C1B /* MuraliRestaurantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2916027EA771200F09C1B /* MuraliRestaurantUITestsLaunchTests.swift */; };
+		28C2917927EA869A00F09C1B /* CategoryTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2917827EA869A00F09C1B /* CategoryTableTableViewController.swift */; };
+		28C2917B27EA86B400F09C1B /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2917A27EA86B400F09C1B /* MenuTableViewController.swift */; };
+		28C2917D27EA86C900F09C1B /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2917C27EA86C900F09C1B /* OrderTableViewController.swift */; };
+		28C2917F27EA88BC00F09C1B /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2917E27EA88BC00F09C1B /* MenuItemDetailViewController.swift */; };
+		28C2918127EA8C9C00F09C1B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2918027EA8C9C00F09C1B /* MenuItem.swift */; };
+		28C2918527EA8E2100F09C1B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2918427EA8E2100F09C1B /* Order.swift */; };
+		28C2918727EA8E3600F09C1B /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2918627EA8E3600F09C1B /* Categories.swift */; };
+		28C2918927EA8E4D00F09C1B /* PrepTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2918827EA8E4D00F09C1B /* PrepTime.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28C2915127EA771200F09C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28C2913227EA771000F09C1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28C2913927EA771000F09C1B;
+			remoteInfo = MuraliRestaurant;
+		};
+		28C2915B27EA771200F09C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28C2913227EA771000F09C1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28C2913927EA771000F09C1B;
+			remoteInfo = MuraliRestaurant;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28C2913A27EA771000F09C1B /* MuraliRestaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuraliRestaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C2913D27EA771000F09C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28C2913F27EA771000F09C1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		28C2914427EA771000F09C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28C2914627EA771100F09C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28C2914927EA771100F09C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28C2914B27EA771100F09C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C2915027EA771200F09C1B /* MuraliRestaurantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuraliRestaurantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C2915427EA771200F09C1B /* MuraliRestaurantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuraliRestaurantTests.swift; sourceTree = "<group>"; };
+		28C2915A27EA771200F09C1B /* MuraliRestaurantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuraliRestaurantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C2915E27EA771200F09C1B /* MuraliRestaurantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuraliRestaurantUITests.swift; sourceTree = "<group>"; };
+		28C2916027EA771200F09C1B /* MuraliRestaurantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuraliRestaurantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28C2917827EA869A00F09C1B /* CategoryTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableTableViewController.swift; sourceTree = "<group>"; };
+		28C2917A27EA86B400F09C1B /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		28C2917C27EA86C900F09C1B /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		28C2917E27EA88BC00F09C1B /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
+		28C2918027EA8C9C00F09C1B /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		28C2918427EA8E2100F09C1B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		28C2918627EA8E3600F09C1B /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		28C2918827EA8E4D00F09C1B /* PrepTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepTime.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28C2913727EA771000F09C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C2914D27EA771200F09C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C2915727EA771200F09C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28C2913127EA771000F09C1B = {
+			isa = PBXGroup;
+			children = (
+				28C2913C27EA771000F09C1B /* MuraliRestaurant */,
+				28C2915327EA771200F09C1B /* MuraliRestaurantTests */,
+				28C2915D27EA771200F09C1B /* MuraliRestaurantUITests */,
+				28C2913B27EA771000F09C1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28C2913B27EA771000F09C1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28C2913A27EA771000F09C1B /* MuraliRestaurant.app */,
+				28C2915027EA771200F09C1B /* MuraliRestaurantTests.xctest */,
+				28C2915A27EA771200F09C1B /* MuraliRestaurantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28C2913C27EA771000F09C1B /* MuraliRestaurant */ = {
+			isa = PBXGroup;
+			children = (
+				28C2917727EA80B600F09C1B /* Controller */,
+				28C2917627EA80A700F09C1B /* View */,
+				28C2917527EA809600F09C1B /* Model */,
+				28C2914B27EA771100F09C1B /* Info.plist */,
+			);
+			path = MuraliRestaurant;
+			sourceTree = "<group>";
+		};
+		28C2915327EA771200F09C1B /* MuraliRestaurantTests */ = {
+			isa = PBXGroup;
+			children = (
+				28C2915427EA771200F09C1B /* MuraliRestaurantTests.swift */,
+			);
+			path = MuraliRestaurantTests;
+			sourceTree = "<group>";
+		};
+		28C2915D27EA771200F09C1B /* MuraliRestaurantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28C2915E27EA771200F09C1B /* MuraliRestaurantUITests.swift */,
+				28C2916027EA771200F09C1B /* MuraliRestaurantUITestsLaunchTests.swift */,
+			);
+			path = MuraliRestaurantUITests;
+			sourceTree = "<group>";
+		};
+		28C2917527EA809600F09C1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28C2918027EA8C9C00F09C1B /* MenuItem.swift */,
+				28C2918427EA8E2100F09C1B /* Order.swift */,
+				28C2918627EA8E3600F09C1B /* Categories.swift */,
+				28C2918827EA8E4D00F09C1B /* PrepTime.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28C2917627EA80A700F09C1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28C2914627EA771100F09C1B /* Assets.xcassets */,
+				28C2914827EA771100F09C1B /* LaunchScreen.storyboard */,
+				28C2914327EA771000F09C1B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28C2917727EA80B600F09C1B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				28C2913D27EA771000F09C1B /* AppDelegate.swift */,
+				28C2913F27EA771000F09C1B /* SceneDelegate.swift */,
+				28C2917827EA869A00F09C1B /* CategoryTableTableViewController.swift */,
+				28C2917A27EA86B400F09C1B /* MenuTableViewController.swift */,
+				28C2917C27EA86C900F09C1B /* OrderTableViewController.swift */,
+				28C2917E27EA88BC00F09C1B /* MenuItemDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28C2913927EA771000F09C1B /* MuraliRestaurant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C2916427EA771200F09C1B /* Build configuration list for PBXNativeTarget "MuraliRestaurant" */;
+			buildPhases = (
+				28C2913627EA771000F09C1B /* Sources */,
+				28C2913727EA771000F09C1B /* Frameworks */,
+				28C2913827EA771000F09C1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuraliRestaurant;
+			productName = MuraliRestaurant;
+			productReference = 28C2913A27EA771000F09C1B /* MuraliRestaurant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28C2914F27EA771200F09C1B /* MuraliRestaurantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C2916727EA771200F09C1B /* Build configuration list for PBXNativeTarget "MuraliRestaurantTests" */;
+			buildPhases = (
+				28C2914C27EA771200F09C1B /* Sources */,
+				28C2914D27EA771200F09C1B /* Frameworks */,
+				28C2914E27EA771200F09C1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28C2915227EA771200F09C1B /* PBXTargetDependency */,
+			);
+			name = MuraliRestaurantTests;
+			productName = MuraliRestaurantTests;
+			productReference = 28C2915027EA771200F09C1B /* MuraliRestaurantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28C2915927EA771200F09C1B /* MuraliRestaurantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C2916A27EA771200F09C1B /* Build configuration list for PBXNativeTarget "MuraliRestaurantUITests" */;
+			buildPhases = (
+				28C2915627EA771200F09C1B /* Sources */,
+				28C2915727EA771200F09C1B /* Frameworks */,
+				28C2915827EA771200F09C1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28C2915C27EA771200F09C1B /* PBXTargetDependency */,
+			);
+			name = MuraliRestaurantUITests;
+			productName = MuraliRestaurantUITests;
+			productReference = 28C2915A27EA771200F09C1B /* MuraliRestaurantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28C2913227EA771000F09C1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					28C2913927EA771000F09C1B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					28C2914F27EA771200F09C1B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 28C2913927EA771000F09C1B;
+					};
+					28C2915927EA771200F09C1B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 28C2913927EA771000F09C1B;
+					};
+				};
+			};
+			buildConfigurationList = 28C2913527EA771000F09C1B /* Build configuration list for PBXProject "MuraliRestaurant" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28C2913127EA771000F09C1B;
+			productRefGroup = 28C2913B27EA771000F09C1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28C2913927EA771000F09C1B /* MuraliRestaurant */,
+				28C2914F27EA771200F09C1B /* MuraliRestaurantTests */,
+				28C2915927EA771200F09C1B /* MuraliRestaurantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28C2913827EA771000F09C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C2914A27EA771100F09C1B /* LaunchScreen.storyboard in Resources */,
+				28C2914727EA771100F09C1B /* Assets.xcassets in Resources */,
+				28C2914527EA771000F09C1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C2914E27EA771200F09C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C2915827EA771200F09C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28C2913627EA771000F09C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C2918127EA8C9C00F09C1B /* MenuItem.swift in Sources */,
+				28C2918927EA8E4D00F09C1B /* PrepTime.swift in Sources */,
+				28C2918727EA8E3600F09C1B /* Categories.swift in Sources */,
+				28C2917B27EA86B400F09C1B /* MenuTableViewController.swift in Sources */,
+				28C2917F27EA88BC00F09C1B /* MenuItemDetailViewController.swift in Sources */,
+				28C2918527EA8E2100F09C1B /* Order.swift in Sources */,
+				28C2917D27EA86C900F09C1B /* OrderTableViewController.swift in Sources */,
+				28C2913E27EA771000F09C1B /* AppDelegate.swift in Sources */,
+				28C2914027EA771000F09C1B /* SceneDelegate.swift in Sources */,
+				28C2917927EA869A00F09C1B /* CategoryTableTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C2914C27EA771200F09C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C2915527EA771200F09C1B /* MuraliRestaurantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C2915627EA771200F09C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C2915F27EA771200F09C1B /* MuraliRestaurantUITests.swift in Sources */,
+				28C2916127EA771200F09C1B /* MuraliRestaurantUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28C2915227EA771200F09C1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28C2913927EA771000F09C1B /* MuraliRestaurant */;
+			targetProxy = 28C2915127EA771200F09C1B /* PBXContainerItemProxy */;
+		};
+		28C2915C27EA771200F09C1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28C2913927EA771000F09C1B /* MuraliRestaurant */;
+			targetProxy = 28C2915B27EA771200F09C1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28C2914327EA771000F09C1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28C2914427EA771000F09C1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28C2914827EA771100F09C1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28C2914927EA771100F09C1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28C2916227EA771200F09C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28C2916327EA771200F09C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28C2916527EA771200F09C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MuraliRestaurant/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MuraliRestaurant;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NWMSU.MuraliRestaurant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28C2916627EA771200F09C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MuraliRestaurant/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MuraliRestaurant;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NWMSU.MuraliRestaurant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28C2916827EA771200F09C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NWMSU.MuraliRestaurantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuraliRestaurant.app/MuraliRestaurant";
+			};
+			name = Debug;
+		};
+		28C2916927EA771200F09C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NWMSU.MuraliRestaurantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuraliRestaurant.app/MuraliRestaurant";
+			};
+			name = Release;
+		};
+		28C2916B27EA771200F09C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NWMSU.MuraliRestaurantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MuraliRestaurant;
+			};
+			name = Debug;
+		};
+		28C2916C27EA771200F09C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NWMSU.MuraliRestaurantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MuraliRestaurant;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28C2913527EA771000F09C1B /* Build configuration list for PBXProject "MuraliRestaurant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C2916227EA771200F09C1B /* Debug */,
+				28C2916327EA771200F09C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C2916427EA771200F09C1B /* Build configuration list for PBXNativeTarget "MuraliRestaurant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C2916527EA771200F09C1B /* Debug */,
+				28C2916627EA771200F09C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C2916727EA771200F09C1B /* Build configuration list for PBXNativeTarget "MuraliRestaurantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C2916827EA771200F09C1B /* Debug */,
+				28C2916927EA771200F09C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C2916A27EA771200F09C1B /* Build configuration list for PBXNativeTarget "MuraliRestaurantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C2916B27EA771200F09C1B /* Debug */,
+				28C2916C27EA771200F09C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28C2913227EA771000F09C1B /* Project object */;
+}
